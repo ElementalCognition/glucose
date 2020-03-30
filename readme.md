@@ -8,7 +8,7 @@ GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptu
 | Enc-Dec   |           | [T5](https://github.com/google-research/text-to-text-transfer-transformer) |
 |Full-LM    |           | [GPT-2](https://github.com/openai/gpt-2) |
 
-The GLUCOSE test set, with answer key is availalbe [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
+The GLUCOSE test set, with answer key is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
 The evaluation results for each of the GLUCOSE models is below. 
 
@@ -51,7 +51,7 @@ There are 337,636 rules filled in, each being a mini-theory with both a specific
 
 Each rule is described by a quality rating, which is based on the worker's performance on the row of responses. We assume about 10% errors on the rating numbers. 
 All the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task.
-For details on how the ratings were created and determined, see the [data quality managementdocument](https://www.overleaf.com/read/khtjjgkxpcgj).
+For details on how the ratings were created and determined, see the [data quality management document](https://www.overleaf.com/read/khtjjgkxpcgj).
 
 The quality ratings are:
 3 = Highest quality. Rules display an accurate level of generalization in the general rules. Rules make sense and are appropriate for the sentence, given the context. 
