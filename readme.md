@@ -11,7 +11,21 @@ GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptu
 
 The GLUCOSE test set, with answer key is availalbe [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
-Here are 
+The evaluation results for each of the GLUCOSE models is below. Each cell shows 
+
+|Model |Eval | Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
+|:-------|:-----|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
+|1S-LM | Human | Spec |
+| | | Gen|
+| | BLEU  | Spec |
+| | | Gen | 
+|Full-LM | Human | 
+| | BLEU | 
+|Enc-Dec | Human | 
+|      | BLEU |
+| | Human|Spec|
+| | Human|Gen|
+
 
 
 ## GLUCOSE Data Only
