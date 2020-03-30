@@ -12,24 +12,26 @@ The GLUCOSE test set, with answer key is availalbe [here](https://comoltd.sharep
 
 The evaluation results for each of the GLUCOSE models is below. Each cell shows 
 
-### Human Scores
+### Human Scores (out of 3)
+Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. Workers rated the output of the modesl on each dimension as well as the output of other workers on the Mturk task.
 
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
 |Full-LM | Spec | 1.8 | 2.0 | 1.7 | 2.1 | 1.6 | 2.0 | 2.2 | 2.0 | 2.2 | 2.1 |
 |Full-LM |  Gen | 1.6 | 1.8 | 1.8 | 1.9 | 1.1 | 1.6 | 2.1 | 1.9 | 2.1 | 1.5 |
-|Enc-Dec | Spec |
-|Enc-Dec | Gen |
-| | Human|Spec|
-| | Human|Gen|
+|Enc-Dec | Spec | 2.7 | 2.6 | 2.5 | 2.7| 2.2 | 2.7| 2.7 | 2.6| 2.8 | 2.5 |
+|Enc-Dec | Gen | 2.3 | 2.4 | 2.3 | 2.5 | 1.9| 2.3 | 2.5 | 2.4 | 2.7 | 1.7 |
+| | Human|Spec| 2.8 | 2.7 | 2.8 | 2.9 | 2.5 | 2.8 | 2.8 | 2.8  | 2.9 | 3.0 |
+| | Human|Gen| 2.5 | 2.6 | 2.4 | 2.6 | 2.4 | 2.6 | 2.6 | 2.6 | 2.6 | 2.7 | 
 
-### BLEU Scores
+### BLEU Scores (out of 100)
+
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
-|Full-LM | Spec |
-|Full-LM | Gen |
-|Enc-Dec | Spec |
-|Enc-Dec | Gen |
+|Full-LM | Spec | 54.7 | 51.0 | 50.5 | 66.2 | 32.7 | 55.3 | 64.4 | 58.8 | 73.4 | 67.0 |
+|Full-LM | Gen | 56.4 | 57.5 | 59.6 | 65.8 | 53.7 | 55.8 | 62.7 | 59.0 | 67.7 | 56.2 |
+|Enc-Dec | Spec |72.5 | 73.8 | 70.5 | 81.1 | 71.7 | 73.9 | 79.3 | 80.2 | 86.6 | 66.9 |
+|Enc-Dec | Gen |66.4 | 68.5 | 69.8 | 76.8 | 68.6 | 67.6 | 73.0 | 77.0 | 86.8 | 57.5 |
 
 ## GLUCOSE Data Only
 
