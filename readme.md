@@ -16,13 +16,17 @@ The evaluation results for each of the GLUCOSE models is below. Each cell shows
 |Model |Eval | Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:-----|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
 |1S-LM | Human | Spec |
-| | | Gen|
-| | BLEU  | Spec |
-| | | Gen | 
-|Full-LM | Human | 
-| | BLEU | 
-|Enc-Dec | Human | 
-|      | BLEU |
+|1S-LM| Human | Gen|
+|1S-LM | BLEU  | Spec |
+|1S-LM | BLEU | Gen | 
+|Full-LM | Human |Spec |
+|Full-LM | Human | Gen |
+|Full-LM | BLEU | Spec |
+|Full-LM | BLEU | Gen |
+|Enc-Dec | Human | Spec |
+|Enc-Dec | Human | Gen |
+|Enc-Dec | BLEU | Spec |
+|Enc-Dec | BLEU | Gen |
 | | Human|Spec|
 | | Human|Gen|
 
