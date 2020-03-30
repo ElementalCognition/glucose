@@ -10,7 +10,7 @@ GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptu
 
 The GLUCOSE test set, with answer key is availalbe [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
-The evaluation results for each of the GLUCOSE models is below. Each cell shows 
+The evaluation results for each of the GLUCOSE models is below. 
 
 ### Human Scores (out of 3)
 Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. Workers rated the output of the modesl on each dimension as well as the output of other workers on the Mturk task.
