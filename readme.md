@@ -1,5 +1,5 @@
 # GLUCOSE
-GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptual framework and dataset for commonsense reasoning. 
+GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptual framework and dataset for commonsense reasoning. 
 
 ## Models Pretrained on GLUCOSE Data
 
