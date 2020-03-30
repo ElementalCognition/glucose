@@ -2,15 +2,22 @@
 GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptual framework and dataset for commonsense reasoning. 
 
 ## Models Pretrained on GLUCOSE Data
+Click on the links in the table below to download our pre-trained models. 
 
 |Model | pre-trained data | Uses |
 |:----------|:---------:|:------:|
 | Enc-Dec   |           | [T5](https://github.com/google-research/text-to-text-transfer-transformer) |
 |Full-LM    |           | [GPT-2](https://github.com/openai/gpt-2) |
 
+The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
+Lee, Sharan Narang, Michael Matena, Yanqi Zhou,Wei Li, and Peter J. Liu. 2019.  Exploring the limits
+of transfer learning with a unified text-to-text transformer. arXiv e-prints), used under Apache 2.0 license. Our pretrained model adds GLUCOSE data to the T5 models. 
+
+The Full-LM uses [GPT-2](https://openai.com/blog/better-language-models/), under the Modified MIT License. We add GLUCOSE data to the GPT-2 model. 
+
 The GLUCOSE test set, with answer key is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
-The evaluation results for each of the GLUCOSE models is below. 
+The evaluation results for each of the GLUCOSE models is below. We tested the models that were enhanced with GLUCOSE training data. The full language model (Full-LM) 
 
 ### Human Scores (out of 3)
 Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. Workers rated the output of the modesl on each dimension as well as the output of other workers on the Mturk task.
