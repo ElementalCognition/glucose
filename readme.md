@@ -1,4 +1,16 @@
-# GLUCOSE Data Only
+# GLUCOSE
+GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptual framework and dataset for commonsense rea-soning. 
+
+## Models Pretrained on GLUCOSE Data
+
+|Model | pre-trained data | Uses |
+|:----------|:---------:|:------:|
+| Enc-Dec   |           | [T5](https://github.com/google-research/text-to-text-transfer-transformer) |
+|Full-LM    |           | [GPT-2](https://github.com/openai/gpt-2) |
+|1S-LM      |           | [GPT-2](https://github.com/openai/gpt-2) |
+
+
+## GLUCOSE Data Only
 
 GLUCOSE is a largescale database for common sense reasoning collected via crowd sourcing. 
 
@@ -40,5 +52,3 @@ F-AS; header: 1_specificNL - 10_generalStructured; description: For each of the 
 AT; header: number_filled_in; description: the number of dimensions that the worker filled in. Each set of general and specific, structured and unstructured, counts as one.; example: 3; uses: averaging how many dimensions workers supplied
 
 AU; selected_sentence; description: text of the sentence that the HIT was about.; example: The school football game was last weekend.; uses: analysis of the text of particular sentences (e.g., relative to the containing story)
-
-#GLUCOSE TRAINED MODELS
