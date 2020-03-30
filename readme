@@ -1,11 +1,12 @@
 
-<h1>GLUCOSE Data Only (For training your own models)</h1>
+# GLUCOSE Data Only#
+
 GLUCOSE is a largescale database for common sense reasoning collected via crowd sourcing. 
 
-This resource is available under [license]
-Please cite [ACL citation] when using this corpus.
+This resource is available under Creative Commons
+Please cite (Mostafazadeh et al., 2020) when using this corpus.
 
-The data is available here 
+The data is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EU0IJE1sT9JCgOe7YU60x-0BI24M7E9BFfknfSq-GwAnHA?e=LhGsp9)
 
 This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train models for learning common sense reasoning about stories.
 
