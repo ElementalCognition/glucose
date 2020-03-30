@@ -17,9 +17,8 @@ The Full-LM uses [GPT-2](https://openai.com/blog/better-language-models/), under
 
 The GLUCOSE test set, with answer key is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
-The evaluation results for each of the GLUCOSE models is below. We tested the models that were enhanced with GLUCOSE training data. The full language model (Full-LM) 
+The evaluation results for each of the GLUCOSE models is below. We tested the models that were enhanced with GLUCOSE training data. 
 
-### Human Scores (out of 3)
 Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. Workers rated the output of the modesl on each dimension as well as the output of other workers on the Mturk task.
 
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
