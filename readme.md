@@ -7,30 +7,29 @@ GLUCOSE: GeneraLized and COntextu-alized Story Explanations, is a novel conceptu
 |:----------|:---------:|:------:|
 | Enc-Dec   |           | [T5](https://github.com/google-research/text-to-text-transfer-transformer) |
 |Full-LM    |           | [GPT-2](https://github.com/openai/gpt-2) |
-|1S-LM      |           | [GPT-2](https://github.com/openai/gpt-2) |
 
 The GLUCOSE test set, with answer key is availalbe [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
 The evaluation results for each of the GLUCOSE models is below. Each cell shows 
 
-|Model |Eval | Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
-|:-------|:-----|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
-|1S-LM | Human | Spec |
-|1S-LM| Human | Gen|
-|1S-LM | BLEU  | Spec |
-|1S-LM | BLEU | Gen | 
-|Full-LM | Human |Spec |
-|Full-LM | Human | Gen |
-|Full-LM | BLEU | Spec |
-|Full-LM | BLEU | Gen |
-|Enc-Dec | Human | Spec |
-|Enc-Dec | Human | Gen |
-|Enc-Dec | BLEU | Spec |
-|Enc-Dec | BLEU | Gen |
+### Human Scores
+
+|Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
+|:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
+|Full-LM | Spec | 1.8 | 2.0 | 1.7 | 2.1 | 1.6 | 2.0 | 2.2 | 2.0 | 2.2 | 2.1 |
+|Full-LM |  Gen | 1.6 | 1.8 | 1.8 | 1.9 | 1.1 | 1.6 | 2.1 | 1.9 | 2.1 | 1.5 |
+|Enc-Dec | Spec |
+|Enc-Dec | Gen |
 | | Human|Spec|
 | | Human|Gen|
 
-
+### BLEU Scores
+|Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
+|:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
+|Full-LM | Spec |
+|Full-LM | Gen |
+|Enc-Dec | Spec |
+|Enc-Dec | Gen |
 
 ## GLUCOSE Data Only
 
