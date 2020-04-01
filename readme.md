@@ -4,10 +4,10 @@ GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptua
 ## Models Pretrained on GLUCOSE Data
 Click on the links in the table below to download our pre-trained models. 
 
-|Model | pre-trained data | Uses |
+|Model Type | Pre-trained Models | Uses |
 |:----------|:---------:|:------:|
-| Enc-Dec   |           | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
-|Full-LM    |           | [GPT-2](https://github.com/ElementalCognition/gpt-2) |
+| Enc-Dec   |   GLUCOSE-trained T5        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
+|Full-LM    |   GLUCOSE-trained GPT-2       | [GPT-2](https://github.com/ElementalCognition/gpt-2) |
 
 The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
 Lee, Sharan Narang, Michael Matena, Yanqi Zhou,Wei Li, and Peter J. Liu. 2019.  Exploring the limits
