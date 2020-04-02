@@ -1,4 +1,6 @@
-The GLUCOSE T5 scripts are plain old T5 scripts, specifying certain parameters. To run, make sure all variables have the right content:
+The GLUCOSE T5 scripts are plain old T5 scripts, specifying certain parameters. 
+
+To run, first install T5 by following the instructions <a href=https://github.com/ElementalCognition/text-to-text-transfer-transformer>here</a>. Then, make sure all system variables have the right content:
 
 
 ### BOTH SCRIPTS
@@ -30,3 +32,4 @@ ${T5_DIR} - the path containing the T5 binaries
 ${DATA_DIR} - the TfdsTask data dir, as described in the T5 documentation
 
 ${DATA_FILE} - the file containing the training data
+
