@@ -1,10 +1,7 @@
-The GLUCOSE T5 scripts are plain old T5 scripts, specifying certain parameters. 
+The GLUCOSE T5 scripts are plain old T5 scripts, specifying certain parameters. To run, make sure all variables have the right content:
 
 
-To run, make sure all variables have the right content:
-
-
-BOTH SCRIPTS
+### BOTH SCRIPTS
 
 ${T5_ENV} - the path of the python environment for running T5
 
@@ -17,7 +14,7 @@ ${ZONE} - the zone of the TPU
 (all of the above are required by T5 and described in the T5 documentation)
 
 
-DECODING SCRIPT (run_decode_glucose.sh)
+### DECODING SCRIPT (run_decode_glucose.sh)
 
 ${MODEL_DIR} - the path containing the trained GLUCOSE model
 
@@ -26,7 +23,7 @@ ${INPUT_FILE} - the file containing data to decode
 ${OUTPUT_FILE} - the location to output results to
 
 
-TRAINING SCRIPT (run_train_glucose.sh)
+### TRAINING SCRIPT (run_train_glucose.sh)
 
 ${T5_DIR} - the path containing the T5 binaries
 
