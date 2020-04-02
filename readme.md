@@ -6,7 +6,7 @@ Click on the links in the table below to download our pre-trained models.
 
 |Model Type | Pre-trained Models | Uses |
 |:----------|:---------:|:------:|
-| Enc-Dec   |   GLUCOSE-trained T5        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
+| Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
 |Full-LM    |   GLUCOSE-trained GPT-2       | [GPT-2](https://github.com/ElementalCognition/gpt-2) |
 
 The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
