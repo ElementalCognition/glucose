@@ -1,0 +1,2 @@
+${T5_ENV}/t5/bin/t5_mesh_transformer --tpu="${TPU_NAME}" --gcp_project="${PROJECT}" --tpu_zone="${ZONE}" --model_dir="${MODEL_DIR}" --gin_file="${MODEL_DIR}/operative_config.gin" --gin_file="sample_decode.gin" --gin_file="infer.gin" --gin_param="utils.run.mode = 'infer'" --gin_param="infer_checkpoint_step = 13157000" --gin_param="input_file = '${INPUT_FILE}'" --gin_param="output_file = '${OUTPUT_FILE}'" --gin_param="utils.tpu_mesh_shape.tpu_topology = '2x2'" 
+
