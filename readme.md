@@ -45,22 +45,16 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 |Enc-Dec | Gen | **66.4** | **68.5** | **69.8** | **76.8** | **68.6** | **67.6** | **73.0** | **77.0** | **86.8** | **57.5** |
 
 ## GLUCOSE Data Only
+The structure data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EU0IJE1sT9JCgOe7YU60x-0BI24M7E9BFfknfSq-GwAnHA?e=LhGsp9)
 
-GLUCOSE is a largescale database for common sense reasoning collected via crowd sourcing. 
-
-This resource is available under Creative Commons
-
-Please cite (Mostafazadeh et al., 2020) when using this corpus.
-
-The data is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EU0IJE1sT9JCgOe7YU60x-0BI24M7E9BFfknfSq-GwAnHA?e=LhGsp9)
-
-This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train models for learning common sense reasoning about stories.
+This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train you own models for learning common sense reasoning about stories.
 
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
 
-There are 337,636 rules filled in, each being a mini-theory with both a specific statment of the mini-theory and a general statement of the mini-theory
+There are 337,636 rules filled in, each being a mini-theory with both a specific statment and a general rule.
 
 Each rule is described by a quality rating, which is based on the worker's performance on the row of responses. We assume about 10% errors on the rating numbers. 
+
 All the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task.
 For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
 
@@ -79,9 +73,9 @@ C; header: worker_id; description: each worker has a unique identificaiton numbe
 
 D; header: worker_quality_assessment; description: rating for the worker on the assignment in the row; example: 2; uses: divide data by work quality
 
-E; header: story; description: contains the full text of the ROC story that was used for the HIT. Each sentence is separated by "***"; example: The school football game was last weekend.****The team has been very good this year.****They have won a lot of games.****A lot of people showed up to watch.****They won by a ton of points.; uses: stories can be used to filter based on vocabulary or topics
+E; header: story; description: contains the full text of the ROC story that was used for the HIT. Each sentence is separated by "\*\*\*"; example: The school football game was last weekend.\*\*\*\*The team has been very good this year.\*\*\*\*They have won a lot of games.\*\*\*\*A lot of people showed up to watch.\*\*\*\*They won by a ton of points.; uses: stories can be used to filter based on vocabulary or topics
 
-F-AS; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	{The school }_[subject] {has }_[verb] {a football team }_[object1] >Causes/Enables> {The football game }_[subject] {was last weekend }_[verb]	Somewhere_A (that is a school ) has  Something_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere_A ||that is a school ||}_[subject] {has }_[verb] {Something_A ||that is a sports team ||}_[object1] >Causes/Enables> {The game }_[subject] {was last weekend }_[verb]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
+F-AS; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	\{The school \}\_\[subject\] {has }_[verb] {a football team }_[object1] >Causes/Enables> {The football game }_[subject] {was last weekend }_[verb]	Somewhere_A (that is a school ) has  Something_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere_A ||that is a school ||}_[subject] {has }_[verb] {Something_A ||that is a sports team ||}_[object1] >Causes/Enables> {The game }_[subject] {was last weekend }_[verb]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
 
 AT; header: number_filled_in; description: the number of dimensions that the worker filled in. Each set of general and specific, structured and unstructured, counts as one.; example: 3; uses: averaging how many dimensions workers supplied
 
