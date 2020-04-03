@@ -1,17 +1,22 @@
 # GLUCOSE
 GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptual framework and dataset for commonsense reasoning. 
 
+This work is available under [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+
+Any use must cite [paper](arxive link).
+
+
 ## Models Pretrained on GLUCOSE Data
 Click on the links in the table below to download our pre-trained models. 
 
 |Model Type | Pre-trained Models | Uses |
 |:----------|:---------:|:------:|
 | Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
-|Full-LM    |   GLUCOSE-trained GPT-2       | [GPT-2](https://github.com/ElementalCognition/gpt-2) |
+|Full-LM    |   GLUCOSE-trained GPT-2       | [GPT-2](https://github.com/openai/gpt-2) |
 
 The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
 Lee, Sharan Narang, Michael Matena, Yanqi Zhou,Wei Li, and Peter J. Liu. 2019.  Exploring the limits
-of transfer learning with a unified text-to-text transformer. arXiv e-prints), used under Apache 2.0 license. Our pretrained model adds GLUCOSE data to the T5 models. 
+of transfer learning with a unified text-to-text transformer. arXiv e-prints), used under Apache 2.0 license. Our pretrained model adds GLUCOSE data to the T5 models. We provide a link to our fork of the T5 repository in order to provide a state of the project that is compatible with our scripts.
 
 The Full-LM uses [GPT-2](https://openai.com/blog/better-language-models/), under the Modified MIT License. We add GLUCOSE data to the GPT-2 model. 
 
