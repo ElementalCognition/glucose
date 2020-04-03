@@ -5,6 +5,8 @@ This work is available under [Creative Commons Attribution-NonCommercial 4.0 Int
 
 Any use must cite [paper](arxive link).
 
+For questions about GLUCOSE or using this repository, please write to glucose@elementalcognition.com
+
 
 ## Models Pretrained on GLUCOSE Data
 Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
