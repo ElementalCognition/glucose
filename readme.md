@@ -7,11 +7,11 @@ Any use must cite [paper](arxive link).
 
 
 ## Models Pretrained on GLUCOSE Data
-Click on the links in the table below to download our pre-trained models. 
+Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
 
-|Model Type | Pre-trained Models | Uses |
-|:----------|:---------:|:------:|
-| Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) |
+|Model Type | Pre-trained Models Only | Uses | Scripts | Test Data | 
+|:----------|:---------:|:------:|:-----------:|:-------:|
+| Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) | [T5 Scripts](https://github.com/ElementalCognition/glucose/tree/master/t5_scripts) | [T5 Data](https://github.com/ElementalCognition/glucose/tree/master/t5_data)
 |Full-LM    |   [GLUCOSE-trained GPT-2](https://comoltd.sharepoint.com/:u:/s/Glucose/EXeUKKWpZ01Cor0N41AmVsgB9mVGlUXhYCMbbNhJNdcYTw?e=sbg8zo)       | [GPT-2](https://github.com/openai/gpt-2) |
 
 The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
@@ -19,8 +19,6 @@ Lee, Sharan Narang, Michael Matena, Yanqi Zhou,Wei Li, and Peter J. Liu. 2019.  
 of transfer learning with a unified text-to-text transformer. arXiv e-prints), used under Apache 2.0 license. Our pretrained model adds GLUCOSE data to the T5 models. We provide a link to our fork of the T5 repository in order to provide a state of the project that is compatible with our scripts.
 
 The Full-LM uses [GPT-2](https://openai.com/blog/better-language-models/), under the Modified MIT License. We add GLUCOSE data to the GPT-2 model. 
-
-The GLUCOSE test set, with answer key is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EeB8o14qh6tOuqjNLPW4gyUB-epWDmPr0_vFgBX7PzCtxg?e=W3ExcR)
 
 The evaluation results for each of the GLUCOSE models is below. We tested the models that were enhanced with GLUCOSE training data. 
 
