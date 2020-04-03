@@ -44,6 +44,9 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 |Enc-Dec | Spec |**72.5** | **73.8** | **70.5** | **81.1** | **71.7** | **73.9** | **79.3** | **80.2** | **86.6** | **66.9** |
 |Enc-Dec | Gen | **66.4** | **68.5** | **69.8** | **76.8** | **68.6** | **67.6** | **73.0** | **77.0** | **86.8** | **57.5** |
 
+## Replicating Results
+To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
+
 ## GLUCOSE Data Only
 The structure data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EU0IJE1sT9JCgOe7YU60x-0BI24M7E9BFfknfSq-GwAnHA?e=LhGsp9)
 
@@ -63,7 +66,7 @@ The quality ratings are:
 2 = Mid-quality raing. These are still very good rules that have a good balance of generality, but a higher percetage in this set may be overly specific, use attribute clauses less proficiently, or not be as conceptually concise
 3 = Lower-quality rating. These rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
 
-### Column format in GLUCOSE crowd worker data
+### Data Format in GLUCOSE Crowd Worker Data
 The data in the csv has 47 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
 
 A; header: unique_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0; uses: find all user responses to a particular sentence in a given story
