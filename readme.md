@@ -11,8 +11,8 @@ Click on the links in the table below to download our pre-trained models or go t
 
 |Model Type | Pre-trained Models Only | Uses | Scripts | Test Data | 
 |:----------|:---------:|:------:|:-----------:|:-------:|
-| Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) | [T5 Scripts](https://github.com/ElementalCognition/glucose/tree/master/t5_scripts) | [T5 Data](https://github.com/ElementalCognition/glucose/tree/master/t5_data)
-|Full-LM    |   [GLUCOSE-trained GPT-2](https://comoltd.sharepoint.com/:u:/s/Glucose/EXeUKKWpZ01Cor0N41AmVsgB9mVGlUXhYCMbbNhJNdcYTw?e=sbg8zo)       | [GPT-2](https://github.com/openai/gpt-2) |
+| Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) | [T5 Scripts](https://github.com/ElementalCognition/glucose/tree/master/t5_scripts) | [T5 Data](https://github.com/ElementalCognition/glucose/tree/master/t5_data) | 
+|Full-LM    |   [GLUCOSE-trained GPT-2](https://comoltd.sharepoint.com/:u:/s/Glucose/EXeUKKWpZ01Cor0N41AmVsgB9mVGlUXhYCMbbNhJNdcYTw?e=sbg8zo)       | [GPT-2](https://github.com/openai/gpt-2) | [GPT-2 Scripts](https://github.com/ElementalCognition/glucose/tree/master/gpt2_scripts) | [GPT-2 Data](https://github.com/ElementalCognition/glucose/tree/master/gpt2_data) |
 
 The Enc-Dec model uses the T5 model of Raffel et al. 2019 (Colin Raffel, Noam Shazeer, Adam Roberts, Katherine
 Lee, Sharan Narang, Michael Matena, Yanqi Zhou,Wei Li, and Peter J. Liu. 2019.  Exploring the limits
