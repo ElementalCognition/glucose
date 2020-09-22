@@ -3,7 +3,7 @@ GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptua
 
 This work is available under [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
-Any use must cite [paper](arxive link).
+Any use must cite [paper](https://arxiv.org/abs/2009.07758).
 
 For questions about GLUCOSE or using this repository, please write to glucose@elementalcognition.com
 
