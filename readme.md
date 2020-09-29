@@ -11,7 +11,7 @@ For questions about GLUCOSE or using this repository, please write to glucose@el
 ## Models Pretrained on GLUCOSE Data
 Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
 
-|Model Type | Pre-trained Models Only | Uses | Scripts | Test Data | 
+|Model Type | Pre-trained Models Only | Uses | Scripts | Data | 
 |:----------|:---------:|:------:|:-----------:|:-------:|
 | Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) | [T5 Scripts](https://github.com/ElementalCognition/glucose/tree/master/t5_scripts) | [T5 Data](https://github.com/ElementalCognition/glucose/tree/master/t5_data) | 
 |Full-LM    |   [GLUCOSE-trained GPT-2](https://comoltd.sharepoint.com/:u:/s/Glucose/EXeUKKWpZ01Cor0N41AmVsgB9mVGlUXhYCMbbNhJNdcYTw?e=sbg8zo)       | [GPT-2](https://github.com/openai/gpt-2) |  | [GPT-2 Data](https://github.com/ElementalCognition/glucose/tree/master/gpt2_data) |
