@@ -66,7 +66,7 @@ The quality ratings are:
 3 = Lower-quality rating. These rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
 
 ### Data Format in GLUCOSE Crowd Worker Data
-The folder contains a csv file for each of the ten dimensions. The data in each csv has 14 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column. Columns J-M say "escaped" when the annotator did not supply a response. 
+The folder contains a csv file for each of the ten dimensions. The data in each csv has 13 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column. Columns J-M say "escaped" when the annotator did not supply a response. 
 
 A; header: unique_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0
 
@@ -92,6 +92,4 @@ K; header: (dimension n)\_specificStructured; description: A specific statement 
 
 L; header: (dimension n)\_generalNL; description: A general rule derived from the specific statement in natural langauge format; example: Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend
 
-M; header: (dimension n)\_generalNL_post_processed: A general rule derived from the specific statement in natural language format, post-processed to remove common errors and the underscoring; example: example: Somewhere that is a school has  Something that is a sports team >Causes/Enables> The game  was last weekend
-
-N; header: (dimension n)\_generalStructured: A general rule derived from the specific statement in a structured format; example: {Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]
+M; header: (dimension n)\_generalStructured: A general rule derived from the specific statement in a structured format; example: {Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]
