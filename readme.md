@@ -48,7 +48,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 ## GLUCOSE Data Only
-The structured data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/ESSRtIZnJBNAuID8TCINuTABD-LfBz5yc51_USmgfG_F8A?e=q0Kx9u)
+The structured data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/Ebdnei4W83NFhOVMLF0KmBEB7gUOiAd3n8YHVtI4wPlK1A?e=dg3Kqw)
 This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train you own models for learning common sense reasoning about stories.
 
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
