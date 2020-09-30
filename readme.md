@@ -48,8 +48,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 ## GLUCOSE Data Only
-The structured data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/ETp8XMx9JNZKrxFmV2n-A-IBAGpg6zxgBv8gQ8BVMA73Zw?e=em4Qpn)
-
+The structured data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/ESSRtIZnJBNAuID8TCINuTABD-LfBz5yc51_USmgfG_F8A?e=q0Kx9u)
 This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train you own models for learning common sense reasoning about stories.
 
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
@@ -67,20 +66,30 @@ The quality ratings are:
 3 = Lower-quality rating. These rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
 
 ### Data Format in GLUCOSE Crowd Worker Data
-The data in the csv has 47 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
+The folder contains a csv file for each of the ten dimensions. The data in each csv has 14 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column. Columns J-M say "escaped" when the annotator did not supply a response. 
 
-A; header: unique_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0; uses: find all user responses to a particular sentence in a given story
+A; header: unique_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0
 
-B; header: selected_sentence_index; description: the index of a given sentence in a story; example: 0; uses: how users respond to the first sentence versus the last, which index of a story contains the most conceptual information (all ROC stories are the same length)
+B; header: story_id; description: a randomly generated alphanumeric sequence for a given story; example: e56c7c3e-4660-40fb-80d0-052d566d676a
 
-C; header: worker_id; description: each worker has a unique identificaiton number; example: 1; uses: filter data by worker
+C; header: assignment_id; description: a ramdomly generated alphnumeric sequence for a given assignment; example: e56c7c3e-4660-40fb-80d0-052d566d676a
 
-D; header: worker_quality_assessment; description: rating for the worker on the assignment in the row; example: 2; uses: divide data by work quality
+D; header: worker_id; description: each worker has a unique identificaiton number (de-identified from actual AMT worker ids); example: 1
 
-E; header: story; description: contains the full text of the ROC story that was used for the HIT. Each sentence is separated by "\*\*\*"; example: The school football game was last weekend.\*\*\*\*The team has been very good this year.\*\*\*\*They have won a lot of games.\*\*\*\*A lot of people showed up to watch.\*\*\*\*They won by a ton of points.; uses: stories can be used to filter based on vocabulary or topics
+E; header: submission_time_normalized: The data of submission for an assignment YYYYMMDD; example: 20190930
 
-F-AS; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	\{The school \}\_\[subject\] \{has \}\_\[verb\] \{a football team \}\_\[object1\] >Causes/Enables> \{The football game \}\_\[subject\] \{was last weekend \}\_\[verb\]	Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
+F; header: worker_quality_assessment; description: rating for the worker on the assignment in the row; example: 2
 
-AT; header: number_filled_in; description: the number of dimensions that the worker filled in. Each set of general and specific, structured and unstructured, counts as one.; example: 3; uses: averaging how many dimensions workers supplied
+G; header: selected_sentence_index; description: the index of a given sentence in a story; example: 0
 
-AU; selected_sentence; description: text of the sentence that the HIT was about.; example: The school football game was last weekend.; uses: analysis of the text of particular sentences (e.g., relative to the containing story)
+H; header: story; description: contains the full text of the ROC story that was used for the HIT. Each sentence is separated by "\*\*\*"; example: The school football game was last weekend.\*\*\*\*The team has been very good this year.\*\*\*\*They have won a lot of games.\*\*\*\*A lot of people showed up to watch.\*\*\*\*They won by a ton of points.
+
+I; selected_sentence; description: text of the sentence that the HIT was about.; example: The school football game was last weekend.
+
+J; header: (dimension n)\_specificNL; description: A specific statement about the story in natural language format; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend
+
+K; header: (dimension n)\_specificStructured; description: A specific statement about the story in a structured format; example: \{The school \}\_\[subject\] \{has \}\_\[verb\] \{a football team \}\_\[object1\] >Causes/Enables> \{The football game \}\_\[subject\] \{was last weekend \}\_\[verb\]
+
+L; header: (dimension n)\_generalNL; description: A general rule derived from the specific statement in natural langauge format; example: Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend
+
+M; header: (dimension n)\_generalStructured: A general rule derived from the specific statement in a structured format; example: {Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]
