@@ -49,7 +49,7 @@ To replicate the results in the tables above using our pretraied models, data, a
 
 ## GLUCOSE Data Only
 The structured data from crowd workers is available [here](https://comoltd.sharepoint.com/:u:/s/Glucose/Ebdnei4W83NFhOVMLF0KmBEB7gUOiAd3n8YHVtI4wPlK1A?e=dg3Kqw)
-This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train you own models for learning common sense reasoning about stories.
+This download contains the crowd worker responses to the GLUCOSE task. These data can be used to train you own models for learning common sense reasoning about stories. Please download the zipped file rather than going into it and downloading individual csv files, since the individual csv files can fail to download due to their size.
 
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
 
