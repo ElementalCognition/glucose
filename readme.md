@@ -92,4 +92,6 @@ K; header: (dimension n)\_specificStructured; description: A specific statement 
 
 L; header: (dimension n)\_generalNL; description: A general rule derived from the specific statement in natural langauge format; example: Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend
 
-M; header: (dimension n)\_generalStructured: A general rule derived from the specific statement in a structured format; example: {Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]
+M; header: (dimension n)\_generalNL_post_processed: A general rule derived from the specific statement in natural language format, post-processed to remove common errors and the underscoring; example: example: Somewhere that is a school has  Something that is a sports team >Causes/Enables> The game  was last weekend
+
+N; header: (dimension n)\_generalStructured: A general rule derived from the specific statement in a structured format; example: {Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]
