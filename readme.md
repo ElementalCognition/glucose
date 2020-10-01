@@ -42,8 +42,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 # The GLUCOSE Data 
-The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/Ebdnei4W83NFhOVMLF0KmBEB7gUOiAd3n8YHVtI4wPlK1A?e=dg3Kqw)
-This download contains the crowd worker responses to the GLUCOSE task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
+The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/Ebdnei4W83NFhOVMLF0KmBEB7gUOiAd3n8YHVtI4wPlK1A?e=dg3Kqw). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
 
 ## Data Format
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
@@ -89,7 +88,8 @@ M; header: (dimension n)\_generalStructured: A general rule derived from the spe
 
 # Citation
 For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.07758).
-```@misc{mostafazadeh2020glucose,
+```
+@misc{mostafazadeh2020glucose,
       title={GLUCOSE: GeneraLized and COntextualized Story Explanations}, 
       author={Nasrin Mostafazadeh and Aditya Kalyanpur and Lori Moon and David Buchanan and Lauren Berkowitz and Or Biran and Jennifer Chu-Carroll},
       year={2020},
