@@ -42,7 +42,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 # The GLUCOSE Data 
-The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EUfPHOUn2zVAqGYazp63WtUBYx48z296VoutJttpqAtjyA?e=LCYd1k). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
+The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EZ0YCf2CSOROnRX7mD5IWpkB8K95STJxmuyTYNgWjTGpkQ?e=d9F2or). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
 
 ## Data Format
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
