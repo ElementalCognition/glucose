@@ -42,7 +42,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 # The GLUCOSE Data 
-The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EZ0YCf2CSOROnRX7mD5IWpkB8K95STJxmuyTYNgWjTGpkQ?e=d9F2or). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
+The GLUCOSE dataset can be downloaded [here](https://comoltd.sharepoint.com/:u:/s/Glucose/EZ0YCf2CSOROnRX7mD5IWpkB8K95STJxmuyTYNgWjTGpkQ?e=dbASHz). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
 
 ## Data Format
 The data is in the form of a csv file with 71,979 rows and 47 columns.   
@@ -58,29 +58,27 @@ The quality ratings are:
 2 = Mid-quality raing. These are still very good rules that have a good balance of generality, but a higher percetage in this set may be overly specific, use attribute clauses less proficiently, or not be as conceptually concise
 3 = Lower-quality rating. These rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
 
-The data in the csv has 50 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
+The data in the csv has 49 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
 
 A; header: experiment_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0
 
 B; header: story_id; description: a random alphanumeric identifier for the story; example: e56c7c3e-4660-40fb-80d0-052d566d676a
 
-C; header: assignment_id; description: a unique random alphanumeric identifier for each sentence-story-worker triple; example: 31Q0U3WYDQ67C69CB1S4G2UW9O317Y
+C; header: worker_id; description: each worker has a unique identificaiton number; example: 21
 
-D; header: worker_id; description: each worker has a unique identificaiton number; example: 21
+D; header; submission_time_normalized: the time of submission in the format YYYYMMDD; example: 20200115
 
-E; header; submission_time_normalized: the time of submission in the format YYYYMMDD; example: 20200115
+E; header: worker_quality_assessment; description: rating for the worker on the assignment in the row; example: 2
 
-F; header: worker_quality_assessment; description: rating for the worker on the assignment in the row; example: 2
+F; header: selected_sentence_index; description: the index of a given sentence in a story; example: 0
 
-G; header: selected_sentence_index; description: the index of a given sentence in a story; example: 0
+G; header: story; description: contains the full text of the ROC story that was used for the HIT. example: It was bedtime at our house. Two of the three kids hit the pillow and fall asleep. The third is a trouble maker. For two hours he continues to get out of bed and want to play. Finally he becomes tired and falls asleep.
 
-H; header: story; description: contains the full text of the ROC story that was used for the HIT. example: It was bedtime at our house. Two of the three kids hit the pillow and fall asleep. The third is a trouble maker. For two hours he continues to get out of bed and want to play. Finally he becomes tired and falls asleep.
+H; header: selected_sentence; description: the sentence from the story that is being annotated; example: It was bedtime at our house.
 
-I; header: selected_sentence; description: the sentence from the story that is being annotated; example: It was bedtime at our house.
+I-AV; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	\{The school \}\_\[subject\] \{has \}\_\[verb\] \{a football team \}\_\[object1\] >Causes/Enables> \{The football game \}\_\[subject\] \{was last weekend \}\_\[verb\]	Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
 
-J-AW; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	\{The school \}\_\[subject\] \{has \}\_\[verb\] \{a football team \}\_\[object1\] >Causes/Enables> \{The football game \}\_\[subject\] \{was last weekend \}\_\[verb\]	Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
-
-AX; header: number_filled_in; description: number of dimensions filled in for the assignment; example: 4
+AW; header: number_filled_in; description: number of dimensions filled in for the assignment; example: 4
 
 # Citation
 For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.07758).
