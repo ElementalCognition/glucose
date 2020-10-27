@@ -85,7 +85,7 @@ For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.077
       author={Nasrin Mostafazadeh and Aditya Kalyanpur and Lori Moon and David Buchanan and Lauren Berkowitz and Or Biran and Jennifer Chu-Carroll},
       year={2020},
       booktitle={The Conference on Empirical Methods in Natural Language Processing},
-      publisher={publisher = "Association for Computational Linguistics"}
+      publisher={Association for Computational Linguistics}
 }
 ```
 
