@@ -7,14 +7,12 @@ This repository contains links to the full GLUCOSE data and GLUCOSE-trained mode
 # Models Pretrained on the GLUCOSE Data
 This repository contains links to the best performing models, as outlined in the paper. Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
 
-|Model Type | Pre-trained Models Only | Uses | Scripts | Data | 
+|Model Name | Fine-tuned Model | Pre-trained Model | Scripts | Data | 
 |:----------|:---------:|:------:|:-----------:|:-------:|
 | Enc-Dec   |   [GLUCOSE-trained T5](https://comoltd.sharepoint.com/:u:/s/Glucose/Ef2aqIM5YEdFr4aRFDZ-HR0BkMSpNiAHxu6Nz3TnDavHAA?e=9Bbdgg)        | [T5](https://github.com/ElementalCognition/text-to-text-transfer-transformer) | [T5 Scripts](https://github.com/ElementalCognition/glucose/tree/master/t5_scripts) | [T5 Data](https://github.com/ElementalCognition/glucose/tree/master/t5_data) | 
 |Full-LM    |   [GLUCOSE-trained GPT-2](https://comoltd.sharepoint.com/:u:/s/Glucose/EXeUKKWpZ01Cor0N41AmVsgB9mVGlUXhYCMbbNhJNdcYTw?e=sbg8zo)       | [GPT-2](https://github.com/openai/gpt-2) |  | [GPT-2 Data](https://github.com/ElementalCognition/glucose/tree/master/gpt2_data) |
 
-The Enc-Dec model finetunes the pretrained T5 model of Raffel et al. 2019 (under Apache 2.0 license) on the GLUCOSE dataset. We provide a link to our fork of the T5 repository in order to provide a state of the project that is compatible with our scripts.
-
-The Full-LM finetunes the pretrained [GPT-2](https://openai.com/blog/better-language-models/) model (under the Modified MIT License). 
+Note that the Enc-Dec model finetunes the pretrained T5 model of Raffel et al. 2019 (under Apache 2.0 license) on the GLUCOSE dataset. We provide a link to our fork of the T5 repository in order to provide a state of the project that is compatible with our scripts. The Full-LM finetunes the pretrained [GPT-2](https://openai.com/blog/better-language-models/) model (under the Modified MIT License). 
 
 The evaluation results for each of the GLUCOSE models, as presented in the paper, can be found below. For details on the evaluation and metrics please refer to the paper. 
 
@@ -47,7 +45,7 @@ The GLUCOSE dataset can be downloaded [here](https://tinyurl.com/yyeo92pt). This
 The data is in the form of a csv file with 65,521 rows and 49 columns. There are more than 670K (335K pair) of GLUCOSE annotations in the dataset. 
 
 ### Rows
-Each annotation in the dataset comes with a quality rating, which is based on the worker's performance on the corresponding row of response. The quality ratings per row should be used for filtering the dataset to be more approporiate for various training or validation purposes. We assume about 10% errors on the calculation of the quality ratings. Note that all the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task. For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
+Each annotation in the dataset comes with a quality rating, which is based on the worker's performance on the corresponding row of response. We recommend using the quality rating per row for filtering the dataset to be more approporiate for your various training or validation purposes. We assume about 10% errors on the calculation of the quality ratings. Note that all the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task. For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
 
 The quality ratings are as follows:
 3 = Highest quality. General rules display an accurate level of generalization in the general rules. Rules make sense and are appropriate for the sentence, given the context. 
