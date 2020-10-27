@@ -5,7 +5,7 @@ This repository contains links to the full GLUCOSE data and GLUCOSE-trained mode
 
 
 # Models Pretrained on the GLUCOSE Data
-This repository contains links to the top best performing models, outlined in the paper. Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
+This repository contains links to the best performing models, as outlined in the paper. Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
 
 |Model Type | Pre-trained Models Only | Uses | Scripts | Data | 
 |:----------|:---------:|:------:|:-----------:|:-------:|
@@ -16,9 +16,10 @@ The Enc-Dec model finetunes the pretrained T5 model of Raffel et al. 2019 (under
 
 The Full-LM finetunes the pretrained [GPT-2](https://openai.com/blog/better-language-models/) model (under the Modified MIT License). 
 
-The evaluation results for each of the GLUCOSE models can be found below. For details on the evaluation please refer to the paper. 
+The evaluation results for each of the GLUCOSE models, as presented in the paper, can be found below. For details on the evaluation and metrics please refer to the paper. 
 
-Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. Workers rated the output of the modesl on each dimension as well as the output of other workers on the Mturk task.
+## Human Evaluation
+Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. 
 
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
@@ -29,8 +30,8 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 |Human|Spec| 2.8 | 2.7 | 2.8 | 2.9 | 2.5 | 2.8 | 2.8 | 2.8  | 2.9 | 3.0 |
 |Human|Gen| 2.5 | 2.6 | 2.4 | 2.6 | 2.4 | 2.6 | 2.6 | 2.6 | 2.6 | 2.7 | 
 
-## BLEU Scores (out of 100)
-
+## Automatic Evaluation
+BLEU Scores (out of 100)
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
 |Full-LM | Spec | 54.7 | 51.0 | 50.5 | 66.2 | 32.7 | 55.3 | 64.4 | 58.8 | 73.4 | 67.0 |
@@ -38,27 +39,25 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 |Enc-Dec | Spec |**72.5** | **73.8** | **70.5** | **81.1** | **71.7** | **73.9** | **79.3** | **80.2** | **86.6** | **66.9** |
 |Enc-Dec | Gen | **66.4** | **68.5** | **69.8** | **76.8** | **68.6** | **67.6** | **73.0** | **77.0** | **86.8** | **57.5** |
 
-## Replicating Model Results
-To replicate the results in the tables above using our pretraied models, data, and scripts, go to the folder linked under _scripts_ above and follow the instructions. 
 
 # The GLUCOSE Data 
 The GLUCOSE dataset can be downloaded [here](https://tinyurl.com/yyeo92pt). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
 
 ## Data Format
-The data is in the form of a csv file with 71,979 rows and 47 columns.   
-There are a total of 337,636 pair of GLUCOSE rules annotated. 
+The data is in the form of a csv file with 65,521 rows and 49 columns. There are more than 670K (335K pair) of GLUCOSE annotations in the dataset. 
 
-Each rule is described by a quality rating, which is based on the worker's performance on the row of responses. We assume about 10% errors on the rating numbers. 
+### Rows
+Each annotation in the dataset comes with a quality rating, which is based on the worker's performance on the corresponding row of response. The quality ratings per row should be used for filtering the dataset to be more approporiate for various training or validation purposes. We assume about 10% errors on the calculation of the quality ratings. Note that all the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task. For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
 
-All the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task.
-For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
+The quality ratings are as follows:
+3 = Highest quality. General rules display an accurate level of generalization in the general rules. Rules make sense and are appropriate for the sentence, given the context. 
+2 = Mid-quality raing. These are still very good general rules that have a good balance of generality, but a higher percetage in this set may be overly specific, use attribute clauses less proficiently, or not be as conceptually concise
+1 = Lower-quality rating. These general rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
 
-The quality ratings are:
-3 = Highest quality. Rules display an accurate level of generalization in the general rules. Rules make sense and are appropriate for the sentence, given the context. 
-2 = Mid-quality raing. These are still very good rules that have a good balance of generality, but a higher percetage in this set may be overly specific, use attribute clauses less proficiently, or not be as conceptually concise
-3 = Lower-quality rating. These rules are still useable, but a higher percentage of them have, in addition to the issues in the 2-level ratings, highly specific general rules and some misunderstanding of how to use attribute clauses. 
+Note that the quality of the specific statements has been high on average, hence, the decision on the quality rating has been mainly based on the performance of the worker in generating the general rules in the row.
 
-The data in the csv has 49 columns. The data in the columns is described below. The column label is given, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
+### Columns
+Below, you can see a column label, along with its index, the the header for that column, a description of the column contents, and example of what occurs in the column, and an example of how the data can be used. 
 
 A; header: experiment_id; description: a randomly generated alphanumeric sequence for a given story with the sentence index appended at the end after two underscores; example: cbee2b5a-f2f9-4bca-9630-6825b1e36c13__0
 
@@ -83,13 +82,12 @@ AW; header: number_filled_in; description: number of dimensions filled in for th
 # Citation
 For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.07758).
 ```
-@misc{mostafazadeh2020glucose,
+@inproceedings{mostafazadeh2020glucose,
       title={GLUCOSE: GeneraLized and COntextualized Story Explanations}, 
       author={Nasrin Mostafazadeh and Aditya Kalyanpur and Lori Moon and David Buchanan and Lauren Berkowitz and Or Biran and Jennifer Chu-Carroll},
       year={2020},
-      eprint={2009.07758},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      booktitle={The Conference on Empirical Methods in Natural Language Processing},
+      publisher={publisher = "Association for Computational Linguistics"}
 }
 ```
 
