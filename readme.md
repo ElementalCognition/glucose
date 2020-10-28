@@ -4,8 +4,8 @@ GLUCOSE: GeneraLized and COntextualized Story Explanations, is a novel conceptua
 This repository contains links to the full GLUCOSE data and GLUCOSE-trained models, as outlined in the main GLUCOSE paper. The dataset and models are released under [Creative Commons Attribution-NonCommercial 4.0 International Public License](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
 
-# Models Pretrained on the GLUCOSE Data
-This repository contains links to the best performing models, as outlined in the paper. Click on the links in the table below to download our pre-trained models or go to their respective directories for scripts and data to replicate our results on the test set.
+# Models Trained on the GLUCOSE Data
+This repository contains links to the best performing trained models, as outlined in the paper. Click on the links in the table below to download our models or go to their respective directories for scripts/data to replicate our results on the GLUCOSE test set.
 
 |Model Name | Fine-tuned Model | Pre-trained Model | Scripts | Data | 
 |:----------|:---------:|:------:|:-----------:|:-------:|
@@ -14,9 +14,9 @@ This repository contains links to the best performing models, as outlined in the
 
 Note that the Enc-Dec model finetunes the pretrained T5 model of Raffel et al. 2019 (under Apache 2.0 license) on the GLUCOSE dataset. We provide a link to our fork of the T5 repository in order to provide a state of the project that is compatible with our scripts. The Full-LM finetunes the pretrained [GPT-2](https://openai.com/blog/better-language-models/) model (under the Modified MIT License). 
 
-The evaluation results for each of the GLUCOSE models, as presented in the paper, can be found below. For details on the evaluation and metrics please refer to the paper. 
+The evaluation results for each of the GLUCOSE models, as also presented in the paper, can be found below. **We encourage any future work to report their corpus-level BLEU scores on the GLUCOSE test set.** For details on the evaluation metrics please refer to the paper. 
 
-## Human Evaluation
+### Human Evaluation
 Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostly incorrect, 2 = Mostly correct, 3 = Correct. 
 
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
@@ -28,7 +28,7 @@ Human scores were on a scale from 0-3 where a rating of 0 = Incorrect, 1 = Mostl
 |Human|Spec| 2.8 | 2.7 | 2.8 | 2.9 | 2.5 | 2.8 | 2.8 | 2.8  | 2.9 | 3.0 |
 |Human|Gen| 2.5 | 2.6 | 2.4 | 2.6 | 2.4 | 2.6 | 2.6 | 2.6 | 2.6 | 2.7 | 
 
-## Automatic Evaluation
+### Automatic Evaluation
 BLEU Scores (out of 100)
 |Model |Level | D1 | D2 | D3 | D4 | D5 | D6 | D7 | D8 | D9 | D10|
 |:-------|:---|:---:|:---:|:---:|:----:|:----:|:----:|:---:|:---:|:---:|:---:|
