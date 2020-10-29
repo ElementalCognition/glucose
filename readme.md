@@ -39,13 +39,13 @@ BLEU Scores (out of 100)
 
 # The full GLUCOSE Dataset 
 
-The full GLUCOSE dataset (excluding the data points used for creating the test set, explained in the next section) can be downloaded [here](https://tinyurl.com/yyeo92pt). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
+The entire GLUCOSE dataset (excluding the data points used for creating the test set, explained in the next section) can be downloaded [here](https://tinyurl.com/yyeo92pt). This download contains all the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. NOTE: make sure to use the quality ratings (explained below) for filtering the dataset to get desired levels of annotation quality.
 
 ## Data Format
 The data is in the form of a csv file with 65,521 rows and 49 columns. There are more than 670K (335K pair) of GLUCOSE annotations in the dataset. 
 
 ### Rows
-Each annotation in the dataset comes with a quality rating, which is based on the worker's performance on the corresponding row of response. We recommend using the quality rating per row for filtering the dataset to be more approporiate for your various training or validation purposes. We assume about 10% errors on the calculation of the quality ratings. Note that all the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task. For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
+Each annotation in the dataset comes with a quality rating, which is based on the worker's performance on the corresponding row of response. We recommend using the worker quality rating per row for filtering the dataset to be more approporiate for your various training or validation purposes. We assume about 10% errors on the calculation of the quality ratings. Note that all the data, regardless of quality rating, were collected from workers who passed challenging qualification tasks and were subsequently trained for improved quality on the task. For details on how the ratings were created and determined, see the [data quality management document](https://github.com/ElementalCognition/glucose/blob/master/data_collection_quality.pdf).
 
 The quality ratings are as follows:
 3 = Highest quality. General rules display an accurate level of generalization in the general rules. Rules make sense and are appropriate for the sentence, given the context. 
