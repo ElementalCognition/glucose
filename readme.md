@@ -78,7 +78,7 @@ I-AV; header: 1_specificNL - 10_generalStructured; description: For each of the 
 AW; header: number_filled_in; description: number of dimensions filled in for the assignment; example: 4
 
 # The GLUCOSE Test Set
-The GLUCOSE test set can be found under the test_set folder. Under that folder, there are two csv files, being the test and key file. Each file has 500 rows, with each row corresponding to one test instance. The columns are self-explanatory. Systems are evaluted by reading the 'test_set_no_answers.csv' test file and filling in the cells that are marked as 'answered', indicating the GLUCOSE dimensions that are not answered (and not escaped) by all the crowd workers. 
+The GLUCOSE test set can be found under the `test` folder. Under that folder, there are two csv files, being the test and key file. Each file has 500 rows, with each row corresponding to one test instance. The columns are self-explanatory. Systems are evaluted by reading the `test_set_no_answers.csv` test file and filling in the cells that are marked as 'answered', indicating the GLUCOSE dimensions that are not answered (and not escaped) by all the crowd workers. The evaluation script can be used for generating the BLEU scores. Note that the csv submission files generates by the systems should have the same format as with the `test_set_no_answers.csv` file.
 
 # Citation
 For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.07758).
