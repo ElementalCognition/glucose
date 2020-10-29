@@ -37,9 +37,9 @@ BLEU Scores (out of 100)
 |Enc-Dec | Spec |**72.5** | **73.8** | **70.5** | **81.1** | **71.7** | **73.9** | **79.3** | **80.2** | **86.6** | **66.9** |
 |Enc-Dec | Gen | **66.4** | **68.5** | **69.8** | **76.8** | **68.6** | **67.6** | **73.0** | **77.0** | **86.8** | **57.5** |
 
+# The full GLUCOSE Dataset 
 
-# The GLUCOSE Data 
-The GLUCOSE dataset can be downloaded [here](https://tinyurl.com/yyeo92pt). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
+The full GLUCOSE dataset (excluding the data points used for creating the test set, explained in the next section) can be downloaded [here](https://tinyurl.com/yyeo92pt). This download contains the crowd worker responses to the annotation task, as outlined in the main paper. This dataset can be used for any training and validation purposes. Note that you should download the zipped file rather than opening the folder and downloading all individual csv files, to make sure the download has been successful.
 
 ## Data Format
 The data is in the form of a csv file with 65,521 rows and 49 columns. There are more than 670K (335K pair) of GLUCOSE annotations in the dataset. 
@@ -76,6 +76,9 @@ H; header: selected_sentence; description: the sentence from the story that is b
 I-AV; header: 1_specificNL - 10_generalStructured; description: For each of the ten dimensions, there are four columns. The columns occur in this order "n_specificNL, n_specificStructured, n_generalNL, n_generalStructured", where n is in 1-10. The specific columns give the specific statements from the story. The general statements give the corresponding generalization. The NL columns are formated in natural language, whereas the structured columns contain indications of the slots used to fill in the data.; example: The school  has  a football team  >Causes/Enables> The football game  was last weekend 	\{The school \}\_\[subject\] \{has \}\_\[verb\] \{a football team \}\_\[object1\] >Causes/Enables> \{The football game \}\_\[subject\] \{was last weekend \}\_\[verb\]	Somewhere\_A (that is a school ) has  Something\_A (that is a sports team ) >Causes/Enables> The game  was last weekend 	{Somewhere\_A \|\|that is a school \|\|\}\_\[subject\] \{has \}\_\[verb\] \{Something\_A \|\|that is a sports team \|\|\}\_\[object1\] >Causes/Enables> \{The game \}\_\[subject\] \{was last weekend \}\_\[verb\]; uses: This is the primary data collected. It provides the common sense knowledge about the related stories and those general rules about the world derived from the specific statements
 
 AW; header: number_filled_in; description: number of dimensions filled in for the assignment; example: 4
+
+# The GLUCOSE Test Set
+The GLUCOSE test set can be found under the test_set folder. Under that folder, there are two csv files, being the test and key file. Each file has 500 rows, with each row corresponding to one test instance. The columns are self-explanatory. Systems are evaluted by reading the 'test_set_no_answers.csv' test file and filling in the cells that are marked as 'answered', indicating the GLUCOSE dimensions that are not answered (and not escaped) by all the crowd workers. 
 
 # Citation
 For any uses please cite the main GLUCOSE [paper](https://arxiv.org/abs/2009.07758).
